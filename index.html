@@ -1,19 +1,1969 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Promptly.codes</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial; text-align: center; margin-top: 100px; background: #f5f5f5; }
-    h1 { color: #222; }
-    p { color: #555; }
-    a { color: #007acc; text-decoration: none; font-weight: bold; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détection d'Agression Verbale - IA Avancée</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <h1>🚀 Promptly.codes</h1>
-  <p>Prompt Engineering & AI Toolkits – For Sale</p>
-  <p><a href="https://www.afternic.com" target="_blank">Buy this domain</a></p>
+    <!-- Modern Animated Background Elements -->
+    <div class="particle-background">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="neural-network">
+        <div class="neural-node"></div>
+        <div class="neural-node"></div>
+        <div class="neural-node"></div>
+        <div class="neural-node"></div>
+        <div class="neural-node"></div>
+        <div class="neural-node"></div>
+        <div class="neural-node"></div>
+        <div class="neural-node"></div>
+    </div>
+
+    <div class="geometric-shapes">
+        <div class="geometric-shape shape-triangle"></div>
+        <div class="geometric-shape shape-circle"></div>
+        <div class="geometric-shape shape-square"></div>
+        <div class="geometric-shape shape-hexagon"></div>
+        <div class="geometric-shape shape-triangle" style="top: 10%; left: 30%; animation-delay: 2s;"></div>
+        <div class="geometric-shape shape-circle" style="top: 30%; left: 60%; animation-delay: 5s;"></div>
+        <div class="geometric-shape shape-square" style="top: 70%; left: 40%; animation-delay: 8s;"></div>
+    </div>
+
+    <div class="data-stream">
+        <div class="data-line"></div>
+        <div class="data-line"></div>
+        <div class="data-line"></div>
+        <div class="data-line"></div>
+        <div class="data-line"></div>
+        <div class="data-line"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-shield-alt"></i>
+                <span>VerbShield AI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#features" class="nav-link">Fonctionnalités</a></li>
+                <li><a href="#demo" class="nav-link">Démo</a></li>
+                <li><a href="#technology" class="nav-link">Technologie</a></li>
+                <li><a href="#architecture" class="nav-link">Architecture</a></li>
+                <li><a href="#team" class="nav-link">Équipe</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Détection Intelligente d'Agression Verbale</h1>
+                <p class="hero-subtitle">
+                    Une solution IA avancée pour identifier et prévenir les agressions verbales en temps réel
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('demo')">
+                        <i class="fas fa-play"></i>
+                        Voir la Démo
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        <i class="fas fa-info-circle"></i>
+                        En savoir plus
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-header">
+                        <div class="status-indicator safe"></div>
+                        <span>Analyse en cours...</span>
+                    </div>
+                    <div class="waveform">
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                    </div>
+                    <div class="analysis-result">
+                        <span class="confidence">Confiance: 98.5%</span>
+                        <span class="classification">Classification: Sûr</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>À Propos du Projet</h2>
+                <p>Une approche innovante pour créer des environnements de communication plus sûrs</p>
+            </div>
+            
+            <!-- Project Explanation with Visual Elements -->
+            <div class="project-explanation">
+                <div class="explanation-visual">
+                    <div class="circular-diagram">
+                        <div class="central-problem">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Agression Verbale</span>
+                        </div>
+                        <div class="solution-circles">
+                            <div class="solution-circle detection-circle">
+                                <i class="fas fa-microphone"></i>
+                                <span>Détection</span>
+                                <div class="circle-progress" style="--progress: 95%"></div>
+                            </div>
+                            <div class="solution-circle analysis-circle">
+                                <i class="fas fa-brain"></i>
+                                <span>Analyse IA</span>
+                                <div class="circle-progress" style="--progress: 98%"></div>
+                            </div>
+                            <div class="solution-circle response-circle">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Protection</span>
+                                <div class="circle-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                        <!-- Connection Lines -->
+                        <svg class="connection-lines" viewBox="0 0 400 400">
+                            <line x1="200" y1="200" x2="120" y2="120" stroke="#4facfe" stroke-width="3" opacity="0.7">
+                                <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+                            </line>
+                            <line x1="200" y1="200" x2="280" y2="120" stroke="#ff6b6b" stroke-width="3" opacity="0.7">
+                                <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+                            </line>
+                            <line x1="200" y1="200" x2="200" y2="320" stroke="#10b981" stroke-width="3" opacity="0.7">
+                                <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" begin="1.4s"/>
+                            </line>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div class="explanation-content">
+                    <h3>🎯 Comment Notre Solution Révolutionne la Détection</h3>
+                    <div class="explanation-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Capture Audio Intelligente</h4>
+                                <p>Système de capteurs multimodaux qui surveillent en permanence l'environnement sonore avec une précision de 95.8%</p>
+                                <div class="step-curve">
+                                    <svg viewBox="0 0 200 60">
+                                        <path d="M 10 50 Q 100 10 190 50" stroke="#4facfe" stroke-width="2" fill="none" stroke-dasharray="5,5">
+                                            <animate attributeName="stroke-dashoffset" values="0;-10" dur="2s" repeatCount="indefinite"/>
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Analyse par Intelligence Artificielle</h4>
+                                <p>Modèle CNN-BiLSTM avancé qui analyse le contenu et détermine le niveau d'agression en temps réel</p>
+                                <div class="step-curve">
+                                    <svg viewBox="0 0 200 60">
+                                        <path d="M 10 50 Q 100 10 190 50" stroke="#ff6b6b" stroke-width="2" fill="none" stroke-dasharray="3,3">
+                                            <animate attributeName="stroke-dashoffset" values="0;-6" dur="1.5s" repeatCount="indefinite"/>
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Réaction de Protection</h4>
+                                <p>Déclenchement automatique des protocoles de sécurité : alertes visuelles, SMS et notifications</p>
+                                <div class="step-curve">
+                                    <svg viewBox="0 0 200 60">
+                                        <path d="M 10 50 Q 100 10 190 50" stroke="#10b981" stroke-width="2" fill="none" stroke-dasharray="7,7">
+                                            <animate attributeName="stroke-dashoffset" values="0;-14" dur="2.5s" repeatCount="indefinite"/>
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Notre Mission</h3>
+                    <p>
+                        Développer une technologie d'intelligence artificielle capable de détecter 
+                        automatiquement les agressions verbales dans les communications en temps réel, 
+                        contribuant ainsi à créer des espaces numériques plus sûrs et respectueux.
+                    </p>
+                    
+                    <!-- Enhanced Stats with Circular Progress -->
+                    <div class="stats-enhanced">
+                        <div class="stat-item-enhanced">
+                            <div class="stat-circle">
+                                <svg viewBox="0 0 120 120">
+                                    <circle cx="60" cy="60" r="50" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                                    <circle cx="60" cy="60" r="50" stroke="#4facfe" stroke-width="8" fill="none" 
+                                            stroke-dasharray="314" stroke-dashoffset="12.6" 
+                                            stroke-linecap="round" transform="rotate(-90 60 60)">
+                                        <animate attributeName="stroke-dashoffset" values="314;12.6" dur="2s" fill="freeze"/>
+                                    </circle>
+                                </svg>
+                                <div class="stat-content">
+                                    <span class="stat-number">95.8%</span>
+                                    <span class="stat-label">Précision</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-item-enhanced">
+                            <div class="stat-circle">
+                                <svg viewBox="0 0 120 120">
+                                    <circle cx="60" cy="60" r="50" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                                    <circle cx="60" cy="60" r="50" stroke="#ff6b6b" stroke-width="8" fill="none" 
+                                            stroke-dasharray="314" stroke-dashoffset="31.4" 
+                                            stroke-linecap="round" transform="rotate(-90 60 60)">
+                                        <animate attributeName="stroke-dashoffset" values="314;31.4" dur="2.5s" fill="freeze"/>
+                                    </circle>
+                                </svg>
+                                <div class="stat-content">
+                                    <span class="stat-number">< 100ms</span>
+                                    <span class="stat-label">Temps de réponse</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stat-item-enhanced">
+                            <div class="stat-circle">
+                                <svg viewBox="0 0 120 120">
+                                    <circle cx="60" cy="60" r="50" stroke="#e5e7eb" stroke-width="8" fill="none"/>
+                                    <circle cx="60" cy="60" r="50" stroke="#10b981" stroke-width="8" fill="none" 
+                                            stroke-dasharray="314" stroke-dashoffset="78.5" 
+                                            stroke-linecap="round" transform="rotate(-90 60 60)">
+                                        <animate attributeName="stroke-dashoffset" values="314;78.5" dur="3s" fill="freeze"/>
+                                    </circle>
+                                </svg>
+                                <div class="stat-content">
+                                    <span class="stat-number">12</span>
+                                    <span class="stat-label">Langues supportées</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="timeline">
+                        <div class="timeline-item active">
+                            <div class="timeline-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Conception</h4>
+                                <p>Analyse des besoins et conception de l'architecture</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item active">
+                            <div class="timeline-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Collecte de données</h4>
+                                <p>Constitution d'un dataset représentatif</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item active">
+                            <div class="timeline-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Entraînement IA</h4>
+                                <p>Développement et optimisation du modèle</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Déploiement</h4>
+                                <p>Mise en production et monitoring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fonctionnalités Clés</h2>
+                <p>Des capacités avancées pour une détection précise et efficace</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Analyse Temps Réel</h3>
+                    <p>Détection instantanée des agressions verbales avec un temps de latence minimal</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Multi-Langues</h3>
+                    <p>Support de multiples langues et dialectes pour une couverture mondiale</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Apprentissage Continu</h3>
+                    <p>Le modèle s'améliore constamment grâce aux nouvelles données</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Confidentialité</h3>
+                    <p>Traitement sécurisé des données avec respect de la vie privée</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>API Flexible</h3>
+                    <p>Intégration facile dans vos applications existantes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Analytics Avancés</h3>
+                    <p>Rapports détaillés et insights sur les patterns de communication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2>Démonstration Interactive</h2>
+                <p>Testez notre système de détection d'agression verbale en direct</p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-input">
+                    <h3>Saisissez un texte à analyser</h3>
+                    <textarea id="demoText" placeholder="Tapez votre message ici pour l'analyser..."></textarea>
+                    <button id="analyzeBtn" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                        Analyser le Texte
+                    </button>
+                </div>
+                <div class="demo-output">
+                    <h3>Résultats de l'Analyse</h3>
+                    <div id="analysisResult" class="analysis-panel">
+                        <div class="result-placeholder">
+                            <i class="fas fa-robot"></i>
+                            <p>Entrez un texte et cliquez sur "Analyser" pour voir les résultats</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2>🔧 Stack Technologique Avancée</h2>
+                <p>Une architecture moderne avec signaux visuels et indicateurs de performance</p>
+            </div>
+            
+            <!-- Technology Overview with Visual Signals -->
+            <div class="tech-overview">
+                <div class="tech-signal-indicators">
+                    <div class="signal-item active">
+                        <div class="signal-circle">
+                            <div class="signal-wave"></div>
+                            <div class="signal-wave"></div>
+                            <div class="signal-wave"></div>
+                        </div>
+                        <span>🚀 Système Actif</span>
+                    </div>
+                    <div class="signal-item processing">
+                        <div class="signal-circle">
+                            <div class="signal-pulse"></div>
+                        </div>
+                        <span>⚡ Traitement IA</span>
+                    </div>
+                    <div class="signal-item monitoring">
+                        <div class="signal-circle">
+                            <div class="signal-radar"></div>
+                        </div>
+                        <span>📊 Monitoring</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enhanced Tech Grid with Connection Curves -->
+            <div class="tech-ecosystem">
+                <div class="tech-grid-enhanced">
+                    <div class="tech-category ai-category">
+                        <div class="category-header">
+                            <div class="category-icon">🧠</div>
+                            <h3>Modèles IA</h3>
+                            <div class="performance-indicator">
+                                <div class="perf-circle">
+                                    <span>95.8%</span>
+                                </div>
+                                <small>Précision</small>
+                            </div>
+                        </div>
+                        <div class="tech-items-enhanced">
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">Whisper</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 98%"></div>
+                                    </div>
+                                    <small>Speech Recognition</small>
+                                </div>
+                            </div>
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">CNN</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 95%"></div>
+                                    </div>
+                                    <small>Deep Learning</small>
+                                </div>
+                            </div>
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">SVM</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 92%"></div>
+                                    </div>
+                                    <small>Classification</small>
+                                </div>
+                            </div>
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">TensorFlow</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                    <small>ML Framework</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Connection Curve to Backend -->
+                        <svg class="connection-curve curve-to-backend" viewBox="0 0 300 150">
+                            <path d="M 50 75 Q 150 25 250 75" stroke="rgba(79, 172, 254, 0.6)" stroke-width="3" fill="none" stroke-dasharray="5,5">
+                                <animate attributeName="stroke-dashoffset" values="0;-10" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                            <circle r="4" fill="#4facfe">
+                                <animateMotion dur="3s" repeatCount="indefinite">
+                                    <mpath href="#path"/>
+                                </animateMotion>
+                            </circle>
+                        </svg>
+                    </div>
+                    
+                    <div class="tech-category backend-category">
+                        <div class="category-header">
+                            <div class="category-icon">⚡</div>
+                            <h3>Backend & API</h3>
+                            <div class="performance-indicator">
+                                <div class="perf-circle">
+                                    <span>99.2%</span>
+                                </div>
+                                <small>Uptime</small>
+                            </div>
+                        </div>
+                        <div class="tech-items-enhanced">
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">FastAPI</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 97%"></div>
+                                    </div>
+                                    <small>API Framework</small>
+                                </div>
+                            </div>
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">Python</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 95%"></div>
+                                    </div>
+                                    <small>Core Language</small>
+                                </div>
+                            </div>
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">Mongodb</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 93%"></div>
+                                    </div>
+                                    <small>Database</small>
+                                </div>
+                            </div>
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-memory"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">Redis</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 91%"></div>
+                                    </div>
+                                    <small>Cache System</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Connection Curve to Hardware -->
+                        <svg class="connection-curve curve-to-hardware" viewBox="0 0 300 150">
+                            <path d="M 50 75 Q 150 125 250 75" stroke="rgba(255, 183, 77, 0.6)" stroke-width="3" fill="none" stroke-dasharray="5,5">
+                                <animate attributeName="stroke-dashoffset" values="0;-10" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                            <circle r="4" fill="#ffb74d">
+                                <animateMotion dur="3s" repeatCount="indefinite">
+                                    <mpath href="#path"/>
+                                </animateMotion>
+                            </circle>
+                        </svg>
+                    </div>
+                    
+                    <div class="tech-category hardware-category">
+                        <div class="category-header">
+                            <div class="category-icon">🔧</div>
+                            <h3>Outils Techniques & Matériel</h3>
+                            <div class="performance-indicator">
+                                <div class="perf-circle">
+                                    <span>96.8%</span>
+                                </div>
+                                <small>Performance</small>
+                            </div>
+                        </div>
+                        <div class="tech-items-enhanced">
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">ESP32 DevKit</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 98%"></div>
+                                    </div>
+                                    <small>Microprocesseur</small>
+                                </div>
+                            </div>
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-memory"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">Raspberry Pi 4B</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 94%"></div>
+                                    </div>
+                                    <small>Mini Computer</small>
+                                </div>
+                            </div>
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">INMP441 I2S</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 97%"></div>
+                                    </div>
+                                    <small>Capteur Audio</small>
+                                </div>
+                            </div>
+                            <div class="tech-item-enhanced">
+                                <div class="tech-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="tech-content">
+                                    <span class="tech-name">OV2640 HD</span>
+                                    <div class="tech-progress">
+                                        <div class="progress-bar" style="width: 95%"></div>
+                                    </div>
+                                    <small>Détecteur Visuel</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Central Processing Hub -->
+                <div class="central-hub">
+                    <div class="hub-circle">
+                        <div class="hub-core">
+                            <i class="fas fa-microchip"></i>
+                            <span>VerbShield</span>
+                            <span>Core Engine</span>
+                        </div>
+                        <div class="hub-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project Goals & Signals -->
+            <div class="project-goals">
+                <h3>🎯 Objectifs du Projet & Signaux de Réussite</h3>
+                <div class="goals-grid">
+                    <div class="goal-item achieved">
+                        <div class="goal-signal">
+                            <div class="signal-check">✓</div>
+                        </div>
+                        <div class="goal-content">
+                            <h4>Détection Temps Réel</h4>
+                            <p>Analyse instantanée des agressions verbales avec latence < 100ms</p>
+                            <div class="goal-progress">
+                                <div class="progress-fill" style="width: 95%"></div>
+                                <span>95% Complété</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-item achieved">
+                        <div class="goal-signal">
+                            <div class="signal-check">✓</div>
+                        </div>
+                        <div class="goal-content">
+                            <h4>Précision IA Avancée</h4>
+                            <p>Modèle CNN-BiLSTM avec précision > 95% et faibles faux positifs</p>
+                            <div class="goal-progress">
+                                <div class="progress-fill" style="width: 98%"></div>
+                                <span>98% Complété</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-item in-progress">
+                        <div class="goal-signal">
+                            <div class="signal-spinner"></div>
+                        </div>
+                        <div class="goal-content">
+                            <h4>Déploiement Multi-Plateforme</h4>
+                            <p>Intégration dans applications web, mobile et systèmes IoT</p>
+                            <div class="goal-progress">
+                                <div class="progress-fill" style="width: 78%"></div>
+                                <span>78% En cours</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-item planned">
+                        <div class="goal-signal">
+                            <div class="signal-clock">⏳</div>
+                        </div>
+                        <div class="goal-content">
+                            <h4>Évolution Continue</h4>
+                            <p>Apprentissage automatique et amélioration des performances</p>
+                            <div class="goal-progress">
+                                <div class="progress-fill" style="width: 45%"></div>
+                                <span>45% Planifié</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>Architecture du Système</h2>
+                <p>Système de Détection d'Agression Verbale - Architecture Modulaire Avancée</p>
+            </div>
+            
+            <!-- Architecture Blocks Flow -->
+            <div class="architecture-flow">
+                <h3>🏗️ Architecture Modulaire - 6 Modules Principaux</h3>
+                
+                <!-- Flow Container -->
+                <div class="flow-container">
+                    <!-- Detection Block -->
+                    <div class="module-block detection-block" data-module="detection">
+                        <div class="block-header">
+                            <div class="block-icon">🎯</div>
+                            <h4>Module Détection Audio</h4>
+                        </div>
+                        <div class="block-content">
+                            <div class="service-item">
+                                <span class="item-label">Service:</span>
+                                <span class="item-value">Détection Son/Mouvement</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-label">Outil:</span>
+                                <span class="item-value">Capteurs Multimodaux</span>
+                            </div>
+                            <div class="output-item">
+                                <span class="item-label">Output:</span>
+                                <span class="item-value">Conditions Détectées</span>
+                            </div>
+                        </div>
+                        <div class="block-specs">
+                            <span class="spec-badge real-time">⚡ Temps réel</span>
+                            <span class="spec-badge accuracy">🎯 Précision 95.8%</span>
+                        </div>
+                        <div class="connection-arrow right-arrow"></div>
+                    </div>
+
+                    <!-- Camera Block -->
+                    <div class="module-block camera-block" data-module="camera">
+                        <div class="block-header">
+                            <div class="block-icon">📹</div>
+                            <h4>Module Caméra</h4>
+                        </div>
+                        <div class="block-content">
+                            <div class="service-item">
+                                <span class="item-label">Service:</span>
+                                <span class="item-value">API + Serveur Vidéo</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-label">Outil:</span>
+                                <span class="item-value">Caméra HD 4K</span>
+                            </div>
+                            <div class="output-item">
+                                <span class="item-label">Output:</span>
+                                <span class="item-value">Vidéo + Enregistrement</span>
+                            </div>
+                        </div>
+                        <div class="block-specs">
+                            <span class="spec-badge video">📹 4K 25FPS</span>
+                            <span class="spec-badge protocol">🔄 ONVIF/RTSP</span>
+                        </div>
+                        <div class="connection-arrow right-arrow"></div>
+                    </div>
+
+                    <!-- Filtrage Block -->
+                    <div class="module-block filtrage-block" data-module="filtrage">
+                        <div class="block-header">
+                            <div class="block-icon">🔧</div>
+                            <h4>Module Filtrage</h4>
+                        </div>
+                        <div class="block-content">
+                            <div class="service-item">
+                                <span class="item-label">Service:</span>
+                                <span class="item-value">Numérisation & Filtrage</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-label">Outil:</span>
+                                <span class="item-value">Python + Serveur</span>
+                            </div>
+                            <div class="output-item">
+                                <span class="item-label">Output:</span>
+                                <span class="item-value">Données Initialisées</span>
+                            </div>
+                        </div>
+                        <div class="block-specs">
+                            <span class="spec-badge python">🐍 OpenCV</span>
+                            <span class="spec-badge filter">📊 RNNoise</span>
+                        </div>
+                        <div class="connection-arrow down-arrow"></div>
+                    </div>
+
+                    <!-- IA Block -->
+                    <div class="module-block ia-block" data-module="ia">
+                        <div class="block-header">
+                            <div class="block-icon">🧠</div>
+                            <h4>Module Intelligence Artificielle</h4>
+                        </div>
+                        <div class="block-content">
+                            <div class="service-item">
+                                <span class="item-label">Service:</span>
+                                <span class="item-value">Analyse Comportementale</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-label">Outil:</span>
+                                <span class="item-value">Modèle Zeta CNN-BiLSTM</span>
+                            </div>
+                            <div class="output-item">
+                                <span class="item-label">Output:</span>
+                                <span class="item-value">Alerte + Précision</span>
+                            </div>
+                        </div>
+                        <div class="block-specs">
+                            <span class="spec-badge ai">🧠 Deep Learning</span>
+                            <span class="spec-badge edge">⚡ Edge TPU</span>
+                        </div>
+                        <div class="connection-arrow left-arrow"></div>
+                    </div>
+
+                    <!-- Decision Block -->
+                    <div class="module-block decision-block" data-module="decision">
+                        <div class="block-header">
+                            <div class="block-icon">⚖️</div>
+                            <h4>Module Décision</h4>
+                        </div>
+                        <div class="block-content">
+                            <div class="service-item">
+                                <span class="item-label">Service:</span>
+                                <span class="item-value">Serveur de Décision</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-label">Outil:</span>
+                                <span class="item-value">Microprocesseur ESP32</span>
+                            </div>
+                            <div class="output-item">
+                                <span class="item-label">Output:</span>
+                                <span class="item-value">Alerte Danger</span>
+                            </div>
+                        </div>
+                        <div class="block-specs">
+                            <span class="spec-badge realtime">⚡ FreeRTOS</span>
+                            <span class="spec-badge iot">🌐 IoT Ready</span>
+                        </div>
+                        <div class="connection-arrow left-arrow"></div>
+                    </div>
+
+                    <!-- Reaction Block -->
+                    <div class="module-block reaction-block" data-module="reaction">
+                        <div class="block-header">
+                            <div class="block-icon">🚨</div>
+                            <h4>Module Réaction</h4>
+                        </div>
+                        <div class="block-content">
+                            <div class="service-item">
+                                <span class="item-label">Service:</span>
+                                <span class="item-value">Réaction + Attention</span>
+                            </div>
+                            <div class="tool-item">
+                                <span class="item-label">Outil:</span>
+                                <span class="item-value">LED+SMS+Buzzer+Moteur</span>
+                            </div>
+                            <div class="output-item">
+                                <span class="item-label">Output:</span>
+                                <span class="item-value">Réaction Finale</span>
+                            </div>
+                        </div>
+                        <div class="block-specs">
+                            <span class="spec-badge sms">📱 Twilio SMS</span>
+                            <span class="spec-badge multi">🚨 Multi-Canal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Old Module Overview Cards -->
+            <div class="modules-overview" style="display: none;">
+                <h3>🏗️ Architecture Modulaire - 6 Modules Principaux</h3>
+                <div class="modules-grid">
+                    <div class="module-card" data-module="detection">
+                        <div class="module-icon">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <h4>Module Détection Audio</h4>
+                        <div class="module-details">
+                            <div class="detail-item">
+                                <span class="label">Service:</span>
+                                <span class="value">Détection Son/Mouvement</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Outil:</span>
+                                <span class="value">Capteurs Multimodaux</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Output:</span>
+                                <span class="value">Conditions Détectées</span>
+                            </div>
+                        </div>
+                        <div class="module-specs">
+                            <span class="spec">⚡ Temps réel</span>
+                            <span class="spec">🎯 Précision 95.8%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card" data-module="camera">
+                        <div class="module-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Module Caméra</h4>
+                        <div class="module-details">
+                            <div class="detail-item">
+                                <span class="label">Service:</span>
+                                <span class="value">API + Serveur Vidéo</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Outil:</span>
+                                <span class="value">Caméra HD 4K</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Output:</span>
+                                <span class="value">Vidéo + Enregistrement</span>
+                            </div>
+                        </div>
+                        <div class="module-specs">
+                            <span class="spec">📹 4K 25FPS</span>
+                            <span class="spec">🔄 ONVIF/RTSP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card" data-module="filtrage">
+                        <div class="module-icon">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                        <h4>Module Filtrage</h4>
+                        <div class="module-details">
+                            <div class="detail-item">
+                                <span class="label">Service:</span>
+                                <span class="value">Numérisation & Filtrage</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Outil:</span>
+                                <span class="value">Python + Serveur</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Output:</span>
+                                <span class="value">Données Initialisées</span>
+                            </div>
+                        </div>
+                        <div class="module-specs">
+                            <span class="spec">🐍 OpenCV</span>
+                            <span class="spec">📊 RNNoise</span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card" data-module="ia">
+                        <div class="module-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Module Intelligence Artificielle</h4>
+                        <div class="module-details">
+                            <div class="detail-item">
+                                <span class="label">Service:</span>
+                                <span class="value">Analyse Comportementale</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Outil:</span>
+                                <span class="value">Modèle Zeta CNN-BiLSTM</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Output:</span>
+                                <span class="value">Alerte + Précision</span>
+                            </div>
+                        </div>
+                        <div class="module-specs">
+                            <span class="spec">🧠 Deep Learning</span>
+                            <span class="spec">⚡ Edge TPU</span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card" data-module="decision">
+                        <div class="module-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h4>Module Décision</h4>
+                        <div class="module-details">
+                            <div class="detail-item">
+                                <span class="label">Service:</span>
+                                <span class="value">Serveur de Décision</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Outil:</span>
+                                <span class="value">Microprocesseur ESP32</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Output:</span>
+                                <span class="value">Alerte Danger</span>
+                            </div>
+                        </div>
+                        <div class="module-specs">
+                            <span class="spec">⚡ FreeRTOS</span>
+                            <span class="spec">🌐 IoT Ready</span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-card" data-module="reaction">
+                        <div class="module-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Module Réaction</h4>
+                        <div class="module-details">
+                            <div class="detail-item">
+                                <span class="label">Service:</span>
+                                <span class="value">Réaction + Attention</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Outil:</span>
+                                <span class="value">LED+SMS+Buzzer+Moteur</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="label">Output:</span>
+                                <span class="value">Réaction Finale</span>
+                            </div>
+                        </div>
+                        <div class="module-specs">
+                            <span class="spec">📱 Twilio SMS</span>
+                            <span class="spec">🚨 Multi-Canal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Flow Process with Interactive Cubes -->
+            <div class="system-flow-cubes">
+                <div class="flow-container-cubes">
+                    <h3>⚡ Flux de Données - 7 Phases</h3>
+                    <p class="flow-description">Processus automatique de détection et réaction en temps réel</p>
+                    
+                    <div class="cubes-timeline">
+                        <div class="phase-cube" data-phase="1" onclick="showPhaseDetails(1)">
+                            <div class="cube-number">1</div>
+                            <div class="cube-title">Détection</div>
+                            <div class="cube-icon">🎤</div>
+                            <div class="cube-subtitle">Audio • Mouvement</div>
+                            <div class="cube-glow"></div>
+                        </div>
+                        
+                        <div class="flow-arrow">→</div>
+                        
+                        <div class="phase-cube" data-phase="2" onclick="showPhaseDetails(2)">
+                            <div class="cube-number">2</div>
+                            <div class="cube-title">Caméra</div>
+                            <div class="cube-icon">📹</div>
+                            <div class="cube-subtitle">HD • Enregistrement</div>
+                            <div class="cube-glow"></div>
+                        </div>
+                        
+                        <div class="flow-arrow">→</div>
+                        
+                        <div class="phase-cube" data-phase="3" onclick="showPhaseDetails(3)">
+                            <div class="cube-number">3</div>
+                            <div class="cube-title">Synchro</div>
+                            <div class="cube-icon">🔄</div>
+                            <div class="cube-subtitle">Modules • Signal</div>
+                            <div class="cube-glow"></div>
+                        </div>
+                        
+                        <div class="flow-arrow">→</div>
+                        
+                        <div class="phase-cube" data-phase="4" onclick="showPhaseDetails(4)">
+                            <div class="cube-number">4</div>
+                            <div class="cube-title">Filtrage</div>
+                            <div class="cube-icon">🔬</div>
+                            <div class="cube-subtitle">Numérique • RNNoise</div>
+                            <div class="cube-glow"></div>
+                        </div>
+                        
+                        <div class="flow-arrow">→</div>
+                        
+                        <div class="phase-cube" data-phase="5" onclick="showPhaseDetails(5)">
+                            <div class="cube-number">5</div>
+                            <div class="cube-title">IA</div>
+                            <div class="cube-icon">🧠</div>
+                            <div class="cube-subtitle">CNN • Whisper • SVM</div>
+                            <div class="cube-glow"></div>
+                        </div>
+                        
+                        <div class="flow-arrow">→</div>
+                        
+                        <div class="phase-cube" data-phase="6" onclick="showPhaseDetails(6)">
+                            <div class="cube-number">6</div>
+                            <div class="cube-title">Décision</div>
+                            <div class="cube-icon">⚖️</div>
+                            <div class="cube-subtitle">Algorithme • ESP32</div>
+                            <div class="cube-glow"></div>
+                        </div>
+                        
+                        <div class="flow-arrow">→</div>
+                        
+                        <div class="phase-cube" data-phase="7" onclick="showPhaseDetails(7)">
+                            <div class="cube-number">7</div>
+                            <div class="cube-title">Réaction</div>
+                            <div class="cube-icon">🚨</div>
+                            <div class="cube-subtitle">LED • SMS • Alerte</div>
+                            <div class="cube-glow"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Phase Details Modal -->
+                    <div id="phaseModal" class="phase-modal">
+                        <div class="modal-content">
+                            <span class="close-modal" onclick="closePhaseDetails()">&times;</span>
+                            <div id="modalContent"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Auto Flow Status -->
+                    <div class="flow-status-cubes">
+                        <div class="status-indicator-cubes">
+                            <div class="status-dot-cubes"></div>
+                            <span>Animation Automatique Active</span>
+                        </div>
+                        <div class="phase-indicator-cubes">
+                            Phase <span id="currentPhaseCubes">1</span> / 7
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Diagram -->
+            <div class="diagram-section">
+                <h3>🎯 Diagramme de Séquence Interactif</h3>
+                <div class="diagram-container">
+                    <div class="diagram-info">
+                        📊 <strong>Diagramme Interactif</strong> - Utilisez les contrôles en bas pour démarrer l'animation du flux de données. 
+                        Le diagramme peut être défilé horizontalement pour voir tous les détails des 24 étapes d'interaction.
+                    </div>
+                    <div id="sequence-diagram" class="sequence-diagram-wrapper"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Tools Section -->
+    <section class="technical-tools-section">
+        <div class="container">
+            <h2>🔧 Outils Techniques & Matériel</h2>
+            <p class="section-subtitle">Composants électroniques et détecteurs utilisés pour la détection</p>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🎛️</div>
+                    <h4>Microprocesseurs</h4>
+                    <ul class="tool-features">
+                        <li>ESP32 DevKit V1</li>
+                        <li>Raspberry Pi 4B</li>
+                        <li>Arduino Uno R3</li>
+                        <li>STM32F407</li>
+                    </ul>
+                    <div class="tool-status">
+                        <span class="status-badge active">Actif</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">📡</div>
+                    <h4>Capteurs Audio</h4>
+                    <ul class="tool-features">
+                        <li>Microphone I2S INMP441</li>
+                        <li>Capteur Décibel MAX9814</li>
+                        <li>Module KY-038</li>
+                        <li>Préampli LM386</li>
+                    </ul>
+                    <div class="tool-status">
+                        <span class="status-badge active">Actif</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">📹</div>
+                    <h4>Détecteurs Visuels</h4>
+                    <ul class="tool-features">
+                        <li>Caméra OV2640</li>
+                        <li>Capteur PIR HC-SR501</li>
+                        <li>Ultrason HC-SR04</li>
+                        <li>LiDAR TF-Luna</li>
+                    </ul>
+                    <div class="tool-status">
+                        <span class="status-badge active">Actif</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">⚡</div>
+                    <h4>Modules Communication</h4>
+                    <ul class="tool-features">
+                        <li>WiFi ESP8266</li>
+                        <li>Bluetooth HC-05</li>
+                        <li>GSM SIM800L</li>
+                        <li>LoRa RFM95W</li>
+                    </ul>
+                    <div class="tool-status">
+                        <span class="status-badge active">Actif</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🔋</div>
+                    <h4>Alimentation & Contrôle</h4>
+                    <ul class="tool-features">
+                        <li>Module AMS1117</li>
+                        <li>Relais 5V</li>
+                        <li>LED RGB WS2812B</li>
+                        <li>Buzzer Actif</li>
+                    </ul>
+                    <div class="tool-status">
+                        <span class="status-badge active">Actif</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">🔬</div>
+                    <h4>Filtrage Signal</h4>
+                    <ul class="tool-features">
+                        <li>ADC ADS1115</li>
+                        <li>Filtre RC</li>
+                        <li>Op-Amp LM358</li>
+                        <li>DSP TMS320</li>
+                    </ul>
+                    <div class="tool-status">
+                        <span class="status-badge active">Actif</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- System Architecture Diagram -->
+            <div class="architecture-diagram">
+                <h3>🏗️ Architecture Système</h3>
+                <div class="diagram-container">
+                    <div class="hardware-layer">
+                        <span class="layer-title">Couche Matérielle</span>
+                        <div class="hardware-components">
+                            <div class="hw-component">Capteurs</div>
+                            <div class="hw-component">Microprocesseurs</div>
+                            <div class="hw-component">Communication</div>
+                        </div>
+                    </div>
+                    <div class="processing-layer">
+                        <span class="layer-title">Traitement Signal</span>
+                        <div class="processing-components">
+                            <div class="proc-component">ADC</div>
+                            <div class="proc-component">Filtrage</div>
+                            <div class="proc-component">Amplification</div>
+                        </div>
+                    </div>
+                    <div class="ai-layer">
+                        <span class="layer-title">Intelligence Artificielle</span>
+                        <div class="ai-components">
+                            <div class="ai-component">Preprocessing</div>
+                            <div class="ai-component">Modèles IA</div>
+                            <div class="ai-component">Décision</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Modern Real-time Analytics Dashboard -->
+<section id="analytics-dashboard" class="analytics-dashboard">
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <h2 class="dashboard-title">Surveillance Intelligente en Temps Réel</h2>
+      <p class="dashboard-subtitle">Tableau de bord interactif avec métriques dynamiques</p>
+      <div class="dashboard-controls">
+        <button class="refresh-btn">
+          <i class="fas fa-sync-alt"></i> Actualiser
+        </button>
+        <div class="time-indicator">
+          <i class="fas fa-clock"></i>
+          <span id="live-time">--:--:--</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="dashboard-grid">
+      <!-- System Status Card -->
+      <div class="dashboard-card status-card">
+        <div class="card-header">
+          <i class="fas fa-heartbeat"></i>
+          <h3>État du Système</h3>
+          <div class="status-badge active">En ligne</div>
+        </div>
+        
+        <div class="status-grid">
+          <div class="status-item">
+            <div class="status-info">
+              <div class="status-indicator online"></div>
+              <span class="status-label">Détection Audio</span>
+              <span class="status-value">Actif</span>
+            </div>
+            <div class="status-chart">
+              <canvas class="mini-wave-chart" width="80" height="30"></canvas>
+            </div>
+          </div>
+          
+          <div class="status-item">
+            <div class="status-info">
+              <div class="status-indicator online"></div>
+              <span class="status-label">Analyse IA</span>
+              <span class="status-value">Actif</span>
+            </div>
+            <div class="status-chart">
+              <canvas class="mini-wave-chart" width="80" height="30"></canvas>
+            </div>
+          </div>
+          
+          <div class="status-item">
+            <div class="status-info">
+              <div class="status-indicator online"></div>
+              <span class="status-label">Module Réaction</span>
+              <span class="status-value">Actif</span>
+            </div>
+            <div class="status-chart">
+              <canvas class="mini-wave-chart" width="80" height="30"></canvas>
+            </div>
+          </div>
+          
+          <div class="status-item">
+            <div class="status-info">
+              <div class="status-indicator warning"></div>
+              <span class="status-label">Maintenance</span>
+              <span class="status-value">Planifiée</span>
+            </div>
+            <div class="status-chart">
+              <canvas class="mini-wave-chart" width="80" height="30"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Performance Metrics Card -->
+      <div class="dashboard-card metrics-card">
+        <div class="card-header">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Performance</h3>
+          <div class="card-actions">
+            <button class="action-btn"><i class="fas fa-expand"></i></button>
+          </div>
+        </div>
+        
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <div class="metric-visual">
+              <canvas class="gauge-chart" width="120" height="80"></canvas>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">2.3s</span>
+              <span class="metric-label">Temps de réponse</span>
+              <span class="metric-trend positive">
+                <i class="fas fa-arrow-up"></i> 15%
+              </span>
+            </div>
+          </div>
+          
+          <div class="metric-item">
+            <div class="metric-visual">
+              <canvas class="gauge-chart" width="120" height="80"></canvas>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">96.0%</span>
+              <span class="metric-label">Précision</span>
+              <span class="metric-trend positive">
+                <i class="fas fa-arrow-up"></i> 2.1%
+              </span>
+            </div>
+          </div>
+          
+          <div class="metric-item">
+            <div class="metric-visual">
+              <canvas class="gauge-chart" width="120" height="80"></canvas>
+            </div>
+            <div class="metric-info">
+              <span class="metric-value">1,279/h</span>
+              <span class="metric-label">Analyses</span>
+              <span class="metric-trend neutral">
+                <i class="fas fa-equals"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Activity Feed Card -->
+      <div class="dashboard-card activity-card">
+        <div class="card-header">
+          <i class="fas fa-list-alt"></i>
+          <h3>Activité Récente</h3>
+          <div class="card-actions">
+            <button class="action-btn"><i class="fas fa-ellipsis-h"></i></button>
+          </div>
+        </div>
+        
+        <div class="activity-feed">
+          <div class="activity-item success">
+            <div class="activity-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="activity-content">
+              <p>Détection audio - Aucune anomalie</p>
+              <small>À l'instant</small>
+            </div>
+          </div>
+          
+          <div class="activity-item info">
+            <div class="activity-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="activity-content">
+              <p>Scan de sécurité complété</p>
+              <small>Il y a 2 minutes</small>
+            </div>
+          </div>
+          
+          <div class="activity-item success">
+            <div class="activity-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="activity-content">
+              <p>Connexion réseau stable</p>
+              <small>Il y a 5 minutes</small>
+            </div>
+          </div>
+          
+          <div class="activity-item warning">
+            <div class="activity-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="activity-content">
+              <p>Maintenance préventive programmée</p>
+              <small>Il y a 12 minutes</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Analytics Charts Card -->
+      <div class="dashboard-card analytics-card">
+        <div class="card-header">
+          <i class="fas fa-chart-line"></i>
+          <h3>Analytics</h3>
+          <div class="time-filter">
+            <select>
+              <option>24h</option>
+              <option>7j</option>
+              <option>30j</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="analytics-content">
+          <div class="chart-container">
+            <canvas id="detections-chart" height="200"></canvas>
+          </div>
+          <div class="stats-container">
+            <div class="stat-item">
+              <span class="stat-value">2,847</span>
+              <span class="stat-label">Aujourd'hui</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">18,923</span>
+              <span class="stat-label">7 jours</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value error">0.3%</span>
+              <span class="stat-label">Faux positifs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- System Health Card -->
+      <div class="dashboard-card health-card">
+        <div class="card-header">
+          <i class="fas fa-server"></i>
+          <h3>Santé Système</h3>
+          <div class="health-status">Stable</div>
+        </div>
+        
+        <div class="health-metrics">
+          <div class="health-metric">
+            <div class="metric-header">
+              <span>CPU</span>
+              <span class="metric-value">34%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 34%; background: #4facfe;"></div>
+            </div>
+          </div>
+          
+          <div class="health-metric">
+            <div class="metric-header">
+              <span>Mémoire</span>
+              <span class="metric-value">67%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 67%; background: #10b981;"></div>
+            </div>
+          </div>
+          
+          <div class="health-metric">
+            <div class="metric-header">
+              <span>GPU</span>
+              <span class="metric-value">89%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 89%; background: #ff6b6b;"></div>
+            </div>
+          </div>
+          
+          <div class="health-metric">
+            <div class="metric-header">
+              <span>Réseau</span>
+              <span class="metric-value">23%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 23%; background: #ffd93d;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Models & Alerts Management Card -->
+      <div class="dashboard-card ai-alerts-card">
+        <div class="card-header">
+          <i class="fas fa-brain"></i>
+          <h3>Modèles IA & Alertes</h3>
+          <div class="card-actions">
+            <button class="action-btn"><i class="fas fa-cog"></i></button>
+          </div>
+        </div>
+        
+        <div class="ai-alerts-content">
+          <!-- AI Models Section -->
+          <div class="ai-models-section">
+            <h4><i class="fas fa-robot"></i> Requêtes IA en Temps Réel</h4>
+            <div class="models-grid">
+              <div class="model-item">
+                <div class="model-status active">
+                  <i class="fas fa-microphone"></i>
+                  <span>Whisper ASR</span>
+                </div>
+                <div class="model-stats">
+                  <span class="stat-number">1,247</span>
+                  <span class="stat-label">Requêtes/h</span>
+                </div>
+              </div>
+              
+              <div class="model-item">
+                <div class="model-status active">
+                  <i class="fas fa-network-wired"></i>
+                  <span>CNN Classifier</span>
+                </div>
+                <div class="model-stats">
+                  <span class="stat-number">890</span>
+                  <span class="stat-label">Prédictions/h</span>
+                </div>
+              </div>
+              
+              <div class="model-item">
+                <div class="model-status active">
+                  <i class="fas fa-chart-line"></i>
+                  <span>SVM Detector</span>
+                </div>
+                <div class="model-stats">
+                  <span class="stat-number">156</span>
+                  <span class="stat-label">Alertes/h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alerts & SMS Section -->
+          <div class="alerts-section">
+            <h4><i class="fas fa-exclamation-triangle"></i> Alertes & SMS Police</h4>
+            <div class="alerts-list">
+              <div class="alert-item critical">
+                <div class="alert-icon">
+                  <i class="fas fa-siren"></i>
+                </div>
+                <div class="alert-content">
+                  <span class="alert-type">Agression Détectée</span>
+                  <span class="alert-time">Il y a 2 min</span>
+                  <span class="alert-status sms-sent">SMS Police Envoyé</span>
+                </div>
+              </div>
+              
+              <div class="alert-item warning">
+                <div class="alert-icon">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+                <div class="alert-content">
+                  <span class="alert-type">Seuil Dépassé</span>
+                  <span class="alert-time">Il y a 8 min</span>
+                  <span class="alert-status monitoring">Surveillance</span>
+                </div>
+              </div>
+              
+              <div class="alert-item info">
+                <div class="alert-icon">
+                  <i class="fas fa-info"></i>
+                </div>
+                <div class="alert-content">
+                  <span class="alert-type">Test Système</span>
+                  <span class="alert-time">Il y a 15 min</span>
+                  <span class="alert-status completed">Complété</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Response Time Chart -->
+          <div class="response-chart-section">
+            <h4><i class="fas fa-clock"></i> Temps de Réponse IA</h4>
+            <div class="chart-mini-container">
+              <canvas id="response-time-chart" width="300" height="120"></canvas>
+            </div>
+            <div class="chart-stats">
+              <div class="chart-stat">
+                <span class="stat-value">2.3s</span>
+                <span class="stat-label">Moyenne</span>
+              </div>
+              <div class="chart-stat">
+                <span class="stat-value">1.1s</span>
+                <span class="stat-label">Min</span>
+              </div>
+              <div class="chart-stat">
+                <span class="stat-value">4.7s</span>
+                <span class="stat-label">Max</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Équipe de Travail</h2>
+                <p>Une équipe passionnée et dédiée au développement de solutions innovantes en intelligence artificielle</p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- Étudiant 1 -->
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-circle">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-badge student">Étudiant ENSI</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Montassar Nawara</h3>
+                        <p class="member-role">Développeur</p>
+                        <p class="member-school">École Nationale des Sciences de l'Informatique</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Intelligence Artificielle</span>
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Backend</span>
+                        </div>
+                        <div class="member-contact">
+                            <a href="mailto:montassar.nawara@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="contact-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Étudiant 2 -->
+                <div class="team-member">
+                    <div class="member-photo">
+                        <div class="photo-circle">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-badge student">Étudiant ENSI</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Mohamed Amine Chaieb</h3>
+                        <p class="member-role">Développeur & Analyste</p>
+                        <p class="member-school">École Nationale des Sciences de l'Informatique</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Analyse de Données</span>
+                            <span class="skill-tag">Backend</span>
+                        </div>
+                        <div class="member-contact">
+                            <a href="#" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="contact-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Encadreur -->
+                <div class="team-member supervisor">
+                    <div class="member-photo">
+                        <div class="photo-circle supervisor-photo">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="member-badge supervisor">Encadreur</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Yomna Sayeb</h3>
+                        <p class="member-role">Encadreur du Projet</p>
+                        <p class="member-school">Superviseur Académique</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">Intelligence Artificielle</span>
+                            <span class="skill-tag">Recherche Académique</span>
+                            <span class="skill-tag">Encadrement</span>
+                        </div>
+                        <div class="member-contact">
+                            <a href="#" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="contact-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Info -->
+            <div class="project-team-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Institution</h4>
+                        <p>École Nationale des Sciences de l'Informatique (ENSI)</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Type de Projet</h4>
+                        <p>Projet de Fin d'Études - Intelligence Artificielle</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Année Académique</h4>
+                        <p>2024 - 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-nous</h2>
+                <p>Intéressé par notre solution ? Prenons contact !</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>montassar.nawara@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+216 22 403 279</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>ensi manouba <br>8070 tunisie , manouba </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>VerbShield AI</span>
+                    </div>
+                    <p class="brand-tagline">
+                        Solution d'intelligence artificielle avancée pour la détection 
+                        automatique d'agressions verbales en temps réel.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#about">À propos</a>
+                    <a href="#features">Fonctionnalités</a>
+                    <a href="#demo">Démo</a>
+                    <a href="#technology">Technologie</a>
+                    <a href="#architecture">Architecture</a>
+                    <a href="#team">Équipe</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <div class="social-title">Suivez-nous</div>
+                    <div class="social-links">
+                        <a href="#" title="LinkedIn" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" title="Twitter" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" title="GitHub" class="social-link github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span class="copyright-year">2025</span> VerbShield AI. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script-enhanced.js"></script>
+    <script src="js/sequence-diagram.js"></script>
+    <script src="js/modern-dashboard.js"></script>
+    <script src="js/footer-animations.js"></script>
+    <script src="js/modern-navigation.js"></script>
+    <script>
+        // Initialisation du diagramme de séquence
+        document.addEventListener('DOMContentLoaded', function() {
+            // Attendre que D3.js soit chargé
+            if (typeof d3 !== 'undefined') {
+                try {
+                    // Configuration simple pour voir tout le diagramme
+                    const container = document.getElementById('sequence-diagram');
+                    
+                    console.log(`📐 Initialisation du diagramme complet`);
+                    
+                    // Options simplifiées - vue complète sans zoom
+                    const options = {};
+                    
+                    console.log(`📏 Utilisation des dimensions par défaut`);
+                    
+                    const diagram = initSequenceDiagram('#sequence-diagram', options);
+                    console.log('✅ Diagramme de séquence initialisé avec vue complète');
+                    
+                    // Aucun gestionnaire ou ajustement pour éviter les conflits
+                    // Pas d'ajustements automatiques pour éviter le zoom
+                    
+                } catch (error) {
+                    console.error('❌ Erreur lors de l\'initialisation du diagramme:', error);
+                }
+            } else {
+                console.error('❌ D3.js n\'est pas disponible');
+            }
+        });
+    </script>
+    
+    <!-- Dashboard Animations Script -->
+    <script src="js/dashboard-animations.js"></script>
+    <script src="js/compact-flow-animations.js"></script>
+    <script src="js/auto-flow-animations.js"></script>
+    <script src="js/enhanced-dashboard.js"></script>
+    <script src="js/interactive-cubes.js"></script>
 </body>
 </html>
