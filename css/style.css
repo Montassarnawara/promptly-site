@@ -7245,3 +7245,544 @@ body::after {
         align-items: center;
     }
 }
+
+/* Adjust body padding to accommodate ticker bar */
+body {
+    padding-bottom: 60px; /* Space for ticker bar */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-bottom: 45px;
+    }
+}
+
+/* ====================================
+   NEWS TICKER BAR (TV STYLE)
+==================================== */
+
+.news-ticker-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    border-top: 3px solid #ff6b6b;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    animation: tickerSlideUp 0.8s ease-out;
+}
+
+.ticker-label {
+    background: linear-gradient(135deg, #ff6b6b, #e63946);
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.ticker-label::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e63946;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+
+.breaking-news {
+    color: #fff;
+    font-weight: 900;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    animation: breakingPulse 2s ease-in-out infinite;
+}
+
+.news-label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+}
+
+.ticker-content {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.ticker-text {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: tickerScroll 45s linear infinite;
+    padding-left: 100%;
+    letter-spacing: 0.3px;
+}
+
+.ticker-action {
+    background: linear-gradient(135deg, #00b894, #00a085);
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.ticker-action::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #00b894;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+
+.ticker-btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.ticker-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.ticker-btn i {
+    font-size: 0.8rem;
+    animation: linkPulse 2s ease-in-out infinite;
+}
+
+/* News Ticker Animations */
+@keyframes tickerSlideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tickerScroll {
+    from {
+        transform: translateY(-50%) translateX(0);
+    }
+    to {
+        transform: translateY(-50%) translateX(-100%);
+    }
+}
+
+@keyframes breakingPulse {
+    0%, 100% {
+        opacity: 1;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        opacity: 0.8;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+@keyframes linkPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Enhanced Ticker Effects */
+.ticker-text::before {
+    content: '📺';
+    margin-right: 15px;
+    font-size: 1.1rem;
+    animation: tvIcon 3s ease-in-out infinite;
+}
+
+@keyframes tvIcon {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+}
+
+/* Mobile Responsive Ticker */
+@media (max-width: 768px) {
+    .news-ticker-bar {
+        height: 50px;
+        font-size: 0.85rem;
+    }
+    
+    .ticker-label {
+        min-width: 140px;
+        padding: 0 15px;
+    }
+    
+    .breaking-news {
+        font-size: 0.8rem;
+    }
+    
+    .news-label {
+        font-size: 0.7rem;
+    }
+    
+    .ticker-text {
+        font-size: 0.85rem;
+        animation: tickerScroll 35s linear infinite;
+    }
+    
+    .ticker-btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+    
+    .ticker-action {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .news-ticker-bar {
+        height: 45px;
+    }
+    
+    .ticker-label {
+        min-width: 120px;
+        padding: 0 12px;
+        gap: 5px;
+    }
+    
+    .breaking-news {
+        font-size: 0.7rem;
+    }
+    
+    .news-label {
+        display: none; /* Hide on very small screens */
+    }
+    
+    .ticker-text {
+        font-size: 0.8rem;
+        animation: tickerScroll 30s linear infinite;
+    }
+    
+    .ticker-btn {
+        font-size: 0.75rem;
+        padding: 5px 8px;
+    }
+    
+    .ticker-btn span {
+        display: none; /* Show only icon on mobile */
+    }
+}
+
+/* Ticker Interaction Effects */
+.news-ticker-bar:hover .ticker-text {
+    animation-play-state: paused;
+}
+
+.ticker-label:hover .breaking-news {
+    animation: breakingPulse 0.5s ease-in-out infinite;
+}
+
+/* ====================================
+   FLOATING DOMAIN SALE BANNER
+==================================== */
+
+.floating-sale-banner {
+    position: fixed;
+    top: 50%;
+    right: -400px;
+    transform: translateY(-50%);
+    width: 380px;
+    background: linear-gradient(135deg, #ff6b6b, #ff8e53, #ff6b6b);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(255, 107, 107, 0.3);
+    z-index: 10000;
+    overflow: hidden;
+    animation: slideInBanner 1s ease-out 2s forwards, floatBanner 3s ease-in-out infinite 3s;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner-content {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    z-index: 2;
+}
+
+.banner-icon {
+    font-size: 2.5rem;
+    color: #fff;
+    animation: rotatePulse 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.banner-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sale-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.domain-name {
+    font-size: 1.3rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, #fff, #ffeb3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 20px rgba(255, 235, 59, 0.5);
+    font-family: 'Courier New', monospace;
+}
+
+.sale-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.banner-action {
+    display: flex;
+    align-items: center;
+}
+
+.sale-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 12px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.sale-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+.banner-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.banner-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.banner-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.banner-particles .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    animation: particleFloat 3s ease-in-out infinite;
+}
+
+.banner-particles .particle:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.banner-particles .particle:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation-delay: 1s;
+}
+
+.banner-particles .particle:nth-child(3) {
+    top: 80%;
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.banner-particles .particle:nth-child(4) {
+    top: 40%;
+    left: 70%;
+    animation-delay: 1.5s;
+}
+
+/* Banner Animations */
+@keyframes slideInBanner {
+    from {
+        right: -400px;
+        opacity: 0;
+    }
+    to {
+        right: 20px;
+        opacity: 1;
+    }
+}
+
+@keyframes floatBanner {
+    0%, 100% {
+        transform: translateY(-50%) translateX(0);
+    }
+    50% {
+        transform: translateY(-50%) translateX(-5px);
+    }
+}
+
+@keyframes rotatePulse {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.1);
+    }
+}
+
+@keyframes particleFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-10px) scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .floating-sale-banner {
+        width: 320px;
+        right: -320px;
+    }
+    
+    @keyframes slideInBanner {
+        from {
+            right: -320px;
+            opacity: 0;
+        }
+        to {
+            right: 10px;
+            opacity: 1;
+        }
+    }
+    
+    .banner-content {
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    .banner-icon {
+        font-size: 2rem;
+    }
+    
+    .sale-title {
+        font-size: 1rem;
+    }
+    
+    .domain-name {
+        font-size: 1.1rem;
+    }
+    
+    .sale-btn {
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-sale-banner {
+        width: 280px;
+        right: -280px;
+    }
+    
+    @keyframes slideInBanner {
+        to {
+            right: 5px;
+        }
+    }
+}
